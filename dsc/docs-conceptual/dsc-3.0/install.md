@@ -230,14 +230,14 @@ The following shell script downloads and installs the current release of DSC. Yo
 to download the version of DSC that you want to install.
 
 ```zsh
-wget https://github.com/PowerShell/DSC/releases/download/v3.3.0-rc.2/DSC-3.3.0-rc.2-aarch64-apple-darwin.tar.gz
+curl -sSL -O https://github.com/PowerShell/DSC/releases/download/v3.3.0-rc.2/DSC-3.3.0-rc.2-aarch64-apple-darwin.tar.gz
 ```
 
 Create a new folder and extract files to that folder:
 
 ```zsh
-sudo mkdir -p /usr/local/bin/dsc
-sudo tar -xzf DSC-3.3.0-rc.2-aarch64-apple-darwin.tar.gz -C /usr/local/bin
+mkdir -p ~/.local/share/dsc
+tar -xzf ./dsc-3.3.0-rc.2-aarch64-apple-darwin.tar.gz -C ~/.local/share/dsc
 ```
 
 Add the new folder to your PATH environment variable.
