@@ -68,8 +68,8 @@ winget install --id 9PCX3HX4HZ0Z --source msstore
 ### Install DSC from the Microsoft package repository
 
 > [!NOTE]
-> This script only works for supported versions of Ubuntu that have a package published to the
-> Microsoft package repository. For other versions of Ubuntu, use the manual installation method.
+> This script only works for supported versions of Debian that have a package published to the
+> Microsoft package repository. For other versions of Debian, use the manual installation method.
 
 ```sh
 #!/bin/bash
@@ -191,7 +191,7 @@ rm dsc_3.3.0-rc.2-1_amd64.deb
 source /etc/os-release
 majorver=${VERSION_ID%.*}
 
-# Download the and register Microsoft RedHat repository packages
+# Download and register the Microsoft Red Hat repository package
 curl -sSL -O https://packages.microsoft.com/config/rhel/$majorver/packages-microsoft-prod.rpm
 sudo rpm -i packages-microsoft-prod.rpm
 rm packages-microsoft-prod.rpm
@@ -233,7 +233,7 @@ to download the version of DSC that you want to install.
 wget https://github.com/PowerShell/DSC/releases/download/v3.3.0-rc.2/DSC-3.3.0-rc.2-aarch64-apple-darwin.tar.gz
 ```
 
-Create a new folder and extract  files to that folder:
+Create a new folder and extract files to that folder:
 
 ```zsh
 sudo mkdir -p /usr/local/bin/dsc

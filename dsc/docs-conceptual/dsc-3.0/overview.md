@@ -76,8 +76,11 @@ DSC differs from PowerShell Desired State Configuration (PSDSC) in a few importa
   Configuration documents support a subset of functionality in ARM templates, including parameters,
   variables, metadata, and expression functions to dynamically resolve data in the configuration.
 
-## Integrating with DSC
+## Installation
 
+DSC v3 installation instructions are covered in [Install DSC v3][07].
+
+## Integrating with DSC
 DSC is a platform tool that abstracts the concerns for defining and invoking resources. Higher
 order tools, like [WinGet][04], [Microsoft Dev Box][01], and [Azure Machine Configuration][02] are
 early partners for DSC as orchestration agents.
